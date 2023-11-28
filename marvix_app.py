@@ -38,8 +38,7 @@ if user_db.find_one({'log' : username, 'pass' : user_pas}):
 else:
    login = login_form.form_submit_button(label='Sign In')
    if login:
-     st.sidebar.error("Username or Password is incorrect. Please try 
-        again or create an account.")
+     st.sidebar.error("Username or Password is incorrect. Please try again or create an account.")
 
 def select_signup():
     st.session_state.form = 'signup_form'
