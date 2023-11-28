@@ -61,8 +61,7 @@ else:
          user_db.insert_one({'log' : new_username, 'email' : 
             new_user_email, 'pass' : new_user_pas})
          st.sidebar.success('You have successfully registered!')
-         st.sidebar.success(f"You are logged in as 
-            {new_username.upper()}")
+         st.sidebar.success(f"You are logged in as {new_username.upper()}")
 
 logout = st.sidebar.button(label='Log Out')
 if logout:
